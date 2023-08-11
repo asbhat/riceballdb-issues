@@ -1,0 +1,61 @@
+name: Bug Report
+description: File a bug report to help RiceballDb improve
+title: ""
+labels: ["bug"]
+projects: []
+assignees:
+  - asbhat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: e.g. I expected an image to load, but it did not.
+      value: "A clear and concise description of what the bug is."
+    validations:
+      required: true
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Reproduction steps
+      description: How did this bug happen? Please walk us through it step by step.
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      placeholder: e.g. iPhone 12
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating system version
+      description: What operating system are you using?
+      placeholder: e.g. iOS 17.0
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Application version
+      description: What version of RiceballDb are you using?
+      placeholder: e.g. v0.2.0 (this can be found at the top of Settings > About)
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or videos
+      description: If applicable, add screenshots or videos to help explain the bug
