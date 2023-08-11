@@ -1,0 +1,29 @@
+name: Feature Request
+description: Suggest an idea
+title: "[Feature]: "
+labels: ["enhancement"]
+projects: []
+assignees:
+  - asbhat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: textarea
+    id: feature
+    attributes:
+      label: The new feature
+      description: |
+        If the feature is trying to solve a problem, please describe that problem here too.
+      placeholder: e.g. I'm always frustrated when...
+      value: "A clear and concise description of any underlying problem(s) and the new feature."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional information
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
